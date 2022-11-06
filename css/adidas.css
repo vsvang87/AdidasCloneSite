@@ -111,6 +111,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   line-height: 1.5rem;
 }
 .box {
@@ -145,7 +146,9 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
+
 .box2 {
   width: 24%;
 }
@@ -170,7 +173,7 @@ nav {
 .section-4::after {
   content: "";
   display: block;
-  background: black;
+  background: gray;
   width: 100%;
   height: 1px;
 }
@@ -178,7 +181,59 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0;
+  flex-wrap: wrap;
+  padding: 1.5rem 0;
+}
+.content-1-p {
+  display: flex;
+  flex-wrap: wrap;
+}
+.content-1 a {
+  text-decoration: none;
+  color: gray;
+  text-transform: uppercase;
+  padding: 0 0.5rem;
+}
+.content-1 a:hover {
+  color: black;
+  border-bottom: 3px solid black;
+  padding-bottom: 2.5rem;
+}
+/* Section 5, Horizontal Scroll */
+.section-5 {
+  min-height: 50vh;
+}
+.horizontal-scroll-container {
+  display: grid;
+  gap: 0.8rem;
+  grid-auto-flow: column;
+  grid-auto-columns: 21%;
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  padding-top: 1rem;
+}
+.horizontal-img {
+  width: 100%;
+}
+.scroll-content a {
+  text-decoration: none;
+  color: black;
+}
+.scroll-content a p {
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+/* Section 6, four column */
+.section-6 {
+  min-height: 70vh;
+}
+.color-black {
+  color: black;
+}
+.color-black:hover {
+  color: #fff;
+  background: black;
+  padding: 0.2rem;
 }
 /* Media Query 950 px */
 @media (max-width: 950px) {
@@ -188,6 +243,14 @@ nav {
   }
   .fa-bars {
     display: flex;
+  }
+
+  .four-box-container {
+    flex-wrap: wrap;
+  }
+  .box {
+    width: 49%;
+    padding: 1rem 0;
   }
 
   /* search content */
@@ -248,4 +311,37 @@ nav {
     top: 15px;
     right: 35px;
   }
+}
+@media (max-width: 850px) {
+  .section-3 {
+    padding: 2rem 0;
+  }
+  .category-container {
+    flex-wrap: wrap;
+  }
+  .box2 {
+    width: 48%;
+    padding: 1rem 0;
+  }
+}
+@media (max-width: 650px) {
+  .box2 a {
+    font-size: 0.6rem;
+  }
+  .four-box-container {
+    flex-wrap: wrap;
+  }
+  .box {
+    width: 100%;
+    padding: 1rem 0;
+  }
+  .content-1 {
+    padding: 1rem;
+  }
+  .content-1 a:hover {
+    color: black;
+    border-bottom: none;
+  }
+}
+@media (max-width: 550px) {
 }
