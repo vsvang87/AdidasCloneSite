@@ -4,34 +4,154 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/1e1e1a8121.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="/css/adidas.css" />
     <title>Adidas Clone Site</title>
   </head>
   <body>
+    <div class="black-bar">
+      <a href="#">Join Adidas Club and get 15% off</a>
+    </div>
     <header>
       <div class="wrapper">
         <nav>
-          <!-- The overlay -->
-          <div id="myNav" class="overlay">
-            <!-- Button to close the overlay navigation -->
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-              >&times;</a
-            >
+          <!--Adidas Logo-->
+          <a href="#" class="adidas-logo">
+            <img src="/images/adidasLogo 1.svg" alt="adidas logo" />
+          </a>
+          <!--Hamburger Menu-->
+          <span onclick="openNav()"><i class="fa fa-solid fa-bars"></i></span>
 
-            <!-- Overlay content -->
-            <div class="overlay-content">
-              <a href="#">About</a>
-              <a href="#">Services</a>
-              <a href="#">Clients</a>
-              <a href="#">Contact</a>
+          <div class="navigation">
+            <div id="myNav" class="overlay">
+              <!-- Button to close navigation -->
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+                >&times;</a
+              >
+
+              <!--nav menu-->
+              <ul class="overlay-content nav-menu">
+                <li><a href="#" class="bold-text">Men</a></li>
+                <li><a href="#" class="bold-text">Women</a></li>
+                <li><a href="#" class="bold-text">Kids</a></li>
+                <li><a href="#">Gifts</a></li>
+                <li><a href="#">Sales</a></li>
+                <li><a href="#">3 Stripe Life</a></li>
+              </ul>
             </div>
           </div>
-
-          <!-- Use any element to open/show the overlay navigation menu -->
-          <span onclick="openNav()">open</span>
+          <div class="search-cart-container">
+            <a href="#" class="help">Help</a>
+            <a href="#" class="help">Exchange & Returns</a>
+            <a href="#" class="help">Order Tracker</a>
+            <a href="#" class="help">Join Adiclub</a>
+            <div class="search-cart-content">
+              <input type="search" placeholder="search" />
+              <a href="#"><i class="fa fa-solid fa-user"></i></a>
+              <a href="#"><i class="fa fa-heart"></i></a>
+              <a href="#"><i class="fa fa-bags-shopping"></i>cart</a>
+            </div>
+          </div>
         </nav>
       </div>
+      <!--Percentage off-->
+      <div class="percentage-off">
+        <p>Up to 60% off: No code needed!<a href="#">SHOP SALE</a></p>
+      </div>
     </header>
+    <main>
+      <section class="section-1">
+       <div class="wrapper">
+         <h1 class="uppercase">Give the gift of comfort</h1>
+        <p>Cozy pieces that mix and match for the perfect holiday fits.</p>
+        <button class="button">shop women<i class="fa fa-arrow-right"></i></button>
+          
+        </button>
+        <button class="button">shop men<i class="fa fa-arrow-right"></i></button>
+          
+        </button>
+        <button class="button"> shop kids<i class="fa fa-arrow-right"></i></button>
+         
+        </button>
+       </div>
+      </section>
+      <!--Section 2, Ready Set Gift-->
+      <section class="section-2">
+        <div class="wrapper">
+          <h1 class="uppercase">ready. set. gift.</h1>
+          <p>We've done the hard part for you and rounded up great gift ideas for everyone on your list—from best sellers to re-imagined classics.</p>
+          <div class="four-box-container">
+            <div class="box stocking">
+              <img src="/images/stockingstuffer.webp" class="four-box-img" alt="hat and socks">
+              <h3>Stocking Stuffers</h3>
+              <p>Stock up on hats, socks, and more so you can gift 3-Stripes to everyone this season.</p>
+              <a href="#" class="shop-now">Shop now</a>
+            </div>
+            <div class="box gifts">
+              <img src="/images/gifts&under.jpg" class="four-box-img" alt="shirts">
+              <h3>Gift $50 & Under</h3>
+              <p>Stock up on slides, tees, and backpacks to suit every style.</p>
+              <a href="#" class="shop-now">Shop now</a>
+            </div>
+            <div class="box under">
+              <img src="/images/giftunder$100.webp" class="four-box-img" alt="track fit and shoes">
+              <h3>Gifts $100 & Under</h3>
+              <p>Gift iconic sneakers, track jackets and more.</p>
+              <a href="#" class="shop-now">Shop now</a>
+            </div>
+            <div class="box above">
+              <img src="/images/giftabove$100.webp" class="four-box-img" alt="socks and shoes">
+              <h3>Gifts $100 & Above</h3>
+              <p>Stock gifts guaranteed to please like incredibly comfortable Boost shoes.</p>
+              <a href="#" class="shop-now">Shop now</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Section 3, Category-->
+      <section class="section-3">
+        <div class="wrapper">
+          <div class="category-container">
+            <div class="category-shoe box2">
+              <img src="/images/black&whitestripes.webp" alt="shoe" class="category-img">
+              <a href="#">shoes</a>
+            </div>
+            <div class="category-clothing box2">
+              <img src="/images/clothing.webp" alt="track suit" class="category-img">
+              <a href="#">clothing</a>
+            </div>
+            <div class="category-best-seller box2">
+              <img src="/images/bestsellers.webp" alt="legging" class="category-img">
+              <a href="#">best sellers</a>
+            </div>
+            <div class="category-new-arrival box2">
+              <img src="/images/newarrival.webp" alt="shoe" class="category-img">
+              <a href="#">new arrivals</a>
+            </div>
+          </div>
+      </div>
+      </section>
+      <!-- Section 4, Navigation Menu-->
+      <section class="section-4">
+        <div class="wrapper">
+          <div class="new-trending-exclusive">
+            <div class="content-1">
+              <a href="#">New arrivals</a>
+              <a href="#">what's trending</a>
+              <a href="#">member exclusives</a>
+            </div>
+            <div class="content-1">
+              <a href="#">view all</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <script src="/js/adidas.js"></script>
   </body>
 </html>
