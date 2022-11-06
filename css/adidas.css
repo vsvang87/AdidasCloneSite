@@ -235,6 +235,14 @@ nav {
   background: black;
   padding: 0.2rem;
 }
+/* Section 8, Popular right now */
+.section-8 {
+  min-height: 20vh;
+  padding-top: 2rem;
+}
+.popular-right-now-container {
+  text-align: center;
+}
 /* Media Query 950 px */
 @media (max-width: 950px) {
   .adidas-logo {
