@@ -154,7 +154,7 @@ span i {
 .four-box-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
   line-height: 1.5rem;
 }
@@ -275,6 +275,7 @@ span i {
 /* Section 6, four column */
 .section-6 {
   min-height: 70vh;
+  padding: 1rem 0;
 }
 .color-black {
   color: black;
@@ -283,6 +284,11 @@ span i {
   color: #fff;
   background: black;
   padding: 0.2rem;
+}
+/* Section 7 */
+.section-7 {
+  min-height: 70vh;
+  padding: 1rem 0;
 }
 /* Section 8, Popular right now */
 .section-8 {
