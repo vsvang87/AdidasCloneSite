@@ -296,7 +296,10 @@ span i {
   padding-top: 2rem;
 }
 .popular-right-now-container {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.7rem;
 }
 .title-text {
   font-size: 2rem;
@@ -304,6 +307,7 @@ span i {
   text-transform: uppercase;
   margin-top: 3rem;
   padding-bottom: 1rem;
+  text-align: center;
 }
 .white-box {
   text-decoration: none;
@@ -434,7 +438,8 @@ span i {
     position: relative;
     top: 25%;
     width: 100%;
-    text-align: left;
+    left: 0;
+    text-align: center;
     margin-top: 30px;
     flex-direction: column;
     align-items: flex-start;
@@ -448,7 +453,6 @@ span i {
     text-decoration: none;
     font-size: 40px;
     color: #000;
-
     display: block;
     transition: 0.3s;
   }
@@ -520,6 +524,9 @@ span i {
     color: black;
     border-bottom: none;
   }
+  .overlay-content {
+    left: -5rem;
+  }
 }
 @media (max-width: 550px) {
   .footer-container {
@@ -527,5 +534,24 @@ span i {
   }
   .products {
     width: 49%;
+  }
+  .overlay-content {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .overlay-content li a {
+    font-size: 1rem;
+  }
+  .popular-right-now-container {
+    flex-wrap: wrap;
+    margin: 1rem 0;
+  }
+}
+@media (max-width: 410px) {
+  .overlay-content {
+    left: -8rem;
+  }
+  .overlay-content li a {
+    font-size: 0.8rem;
   }
 }
