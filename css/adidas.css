@@ -1,5 +1,7 @@
 :root {
   --clr-background: #c06c84;
+  --clr-grayishBlue: #e0ebeb;
+  --clr-darkyellow: #f8da5b;
 }
 body {
   padding: 0;
@@ -90,14 +92,39 @@ nav {
 /* Section 1 */
 .section-1 {
   padding: 1rem 0;
-  background-image: url(/images/adidasCover.jpeg);
+  background-image: url(/images/adidaswallpaper.webp);
   background-position: center;
   background-repeat: no;
   background-size: cover;
-  min-height: 50vh;
+  min-height: 60vh;
+  color: #fff;
+}
+.intro-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 60vh;
 }
 .uppercase {
   text-transform: uppercase;
+  font-size: 3rem;
+  margin: 0;
+}
+.shop-option-btn {
+  background: #fff;
+  color: black;
+  text-decoration: none;
+  padding: 0.8rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: 0.2s ease-in-out;
+  letter-spacing: 0.1rem;
+}
+.shop-option-btn:hover {
+  color: gray;
+}
+.intro-content p {
+  padding: 0.7rem 0;
 }
 
 /* Section 2, Ready Set Gift */
@@ -237,11 +264,106 @@ nav {
 }
 /* Section 8, Popular right now */
 .section-8 {
-  min-height: 20vh;
+  min-height: 18vh;
   padding-top: 2rem;
 }
 .popular-right-now-container {
   text-align: center;
+}
+.title-text {
+  font-size: 2rem;
+  font-style: italic;
+  text-transform: uppercase;
+  margin-top: 3rem;
+  padding-bottom: 1rem;
+}
+.white-box {
+  text-decoration: none;
+  color: gray;
+  text-transform: uppercase;
+  border: 0.7px solid gray;
+  padding: 0.5rem;
+}
+.white-box:hover {
+  border: 1.5px solid black;
+}
+/* Two Columns */
+.section-9 {
+  min-height: 70vh;
+  background: var(--clr-grayishBlue);
+}
+.two-columns-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  line-height: 1.5rem;
+}
+.history-col {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 49%;
+}
+/* Section 10, Yellow Background */
+.section-10 {
+  min-height: 10vh;
+  background: var(--clr-darkyellow);
+  padding: 1rem;
+}
+.yellow-background-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.yellow-column {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 49%;
+}
+.sign-up-btn {
+  padding: 1.2rem;
+  background: black;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  transition: 0.1s ease-in-out;
+}
+.sign-up-btn:hover {
+  color: gray;
+}
+.join-our-club {
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+/* Footer */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding: 2rem 0;
+  min-height: 30vh;
+}
+.products h3 {
+  text-transform: uppercase;
+}
+.products p {
+  font-size: 0.8rem;
+  padding: 0;
+  margin: 0.5rem 0;
+}
+.products p a {
+  text-decoration: none;
+  color: black;
+}
+.products {
+  width: 16%;
 }
 /* Media Query 950 px */
 @media (max-width: 950px) {
@@ -331,6 +453,22 @@ nav {
     width: 48%;
     padding: 1rem 0;
   }
+  .two-columns-container {
+    flex-wrap: wrap;
+  }
+  .history-col {
+    width: 100%;
+  }
+  .yellow-background-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .footer-container {
+    flex-wrap: wrap;
+  }
+  .products {
+    width: 32%;
+  }
 }
 @media (max-width: 650px) {
   .box2 a {
@@ -352,4 +490,10 @@ nav {
   }
 }
 @media (max-width: 550px) {
+  .footer-container {
+    flex-wrap: wrap;
+  }
+  .products {
+    width: 49%;
+  }
 }
